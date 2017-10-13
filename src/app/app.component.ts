@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Timezone Display';
+  time = Date.now();
+  zone = "PST";
+  diff = 0;
+  showtime = true;
 }
